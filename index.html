@@ -3,9 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Emergency Service</title>
+     <!-- Tailwind + DaisyUI -->
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="bg-gray-100">
+     <!-- Navbar -->
+  <nav class="flex justify-between items-center p-4 bg-white shadow-md">
+    <div class="flex items-center space-x-2">
+      <img src="img/logo.png" alt="Logo" class="w-8 h-8">
+      <span class="font-bold text-xl">Emergency Service</span>
+    </div>
+    <div class="flex items-center space-x-4">
+      <span  style="border-radius: 10px; display: inline-flex;align-items: center; background-color: rgba(65, 255, 107, 0.1)"><img src="img/heart.png" alt="" style="width: 16px; height: 16px;"> <span id="heartCount">0</span></span>
+      <span style="border-radius: 10px; display: inline-flex;align-items: center;background-color: rgba(65, 255, 107, 0.1)"><img src="img/coin.png" alt="" style="width: 16px; height: 16px;" >
+       <span id="coinCount">100</span></span>
+      <span style="width: 80px; height: 30px;  color: white; border-radius: 15px; text-align: center; background-color: rgba(0, 166, 62, 1)">copy <span id="copyCount">0</span></span>
+    </div>
+  </nav>
     
 </body>
 </html>
